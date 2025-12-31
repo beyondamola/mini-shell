@@ -11,5 +11,5 @@ A minimal Unix-like shell implemented in C to understand process creation, execu
 
 ## Build & Run
 ```bash
-make shell
+make
 ./mini-shell

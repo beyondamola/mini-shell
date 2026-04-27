@@ -4,12 +4,22 @@ A minimal Unix-like shell implemented in C to understand process creation, execu
 
 # Features
 - Command parsing and argument tokenization
-- Program creation using fork()
-- Program execution via execvp()
-- Built-in commands (cd)
-- Exit status handling with waitpid()
+- Program creation using `fork()`
+- Program execution via `execvp()`
+- Built-in commands (`cd`)
+- Piping with `|`
+- Input and output redirection with `<`, `>`, and `>>`
+- Exit status handling with `waitpid()`
+
+# Examples
+```bash
+ls | grep shell
+sort < input.txt > output.txt
+echo "line" >> output.txt
+```
 
 ## Build & Run
 ```bash
 make
 ./mini-shell
+```

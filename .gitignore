@@ -1,2 +1,3 @@
 *.o
 mini-shell
+mini-shell.dSYM/

@@ -7,8 +7,11 @@ A minimal Unix-like shell implemented in C to understand process creation, execu
 - Program creation using `fork()`
 - Program execution via `execvp()`
 - Built-in commands (`cd`)
+- Quoting, escaping, and environment expansion
+- Command chaining with `;`, `&&`, and `||`
 - Piping with `|`
 - Input and output redirection with `<`, `>`, and `>>`
+- `$?` status expansion
 - Exit status handling with `waitpid()`
 
 # Examples
@@ -22,4 +25,9 @@ echo "line" >> output.txt
 ```bash
 make
 ./mini-shell
+```
+
+## Tests
+```bash
+make test
 ```
